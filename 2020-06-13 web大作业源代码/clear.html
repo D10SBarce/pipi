@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#wtop{
+			background-color: white;
+			margin-left: -90px;
+			/*width: 1360px;*/
+			width: 1180px;
+			margin: 0 auto;
+			height: 170px;
+		}
+		#wtop p{
+			float: left;
+			color: gray;
+			font-size: 11px;
+		}
+		#wtop input{
+			float: left;
+			margin-left: 105px;
+			border: 5px solid rgb(255,110,0);
+			border-radius: 5px;
+			height: 35px;
+			width: 495px;
+			margin-top: 20px;
+		}
+		#wtop p:hover{
+			color: rgb(254,110,0);
+		}
+		#wtop img{
+			float: left;
+			margin-left: 15px;
+		}
+		.topline2{
+			border: 1px solid gray;
+			width: 85px;
+			height: 40px;
+			float: left;
+			margin-top: 20px;
+		}
+		.topimg1{
+			height: 18px;
+			width: 18px;
+			float: left;
+			margin-top: 10px;
+			margin-left: 15px;
+		}
+		#wtop li{
+			list-style-type: none;
+			float: left;
+			color: gray;
+			font-size: 11px;
+			margin-right: 7px;
+		}
+		#wtop li:hover{
+			color: rgb(254,110,0);
+		}
+		#topline3{
+			padding-top: 10px;
+			height: 40px;
+			width: 920px;
+		}
+		#topline3 li{
+			line-height: 40px;
+			text-align: center;
+			height: 40px;
+			list-style-type: none;
+			float: left;
+			width: 100px;
+			font-size: 15px;
+		}
+		#temp{
+			width: 1330px;
+			margin:0 auto;
+			background-color: black;
+			height: 40px;
+			color: white;
+			/*margin-top: 180px; */
+		}
+		#temp li{
+			list-style-type: none;
+			float: left;
+			margin-left: 30px;
+			/*width: 100px;*/
+			padding-right: 15px;
+			padding-left: 15px;
+			line-height: 40px;
+			font-size: 15px;
+		}
+		#temp li:hover{
+			background-color: rgb(254,12,74);
+		}
+		/*body{
+			background-color: rgb(246,245,244);
+		}*/
+		#nextsrceen{
+
+		}
+		#shangpindatu{
+			float: left;
+			margin-top: 20px;
+			margin-left: 20px;
+			width: 410px;
+			height: 410px;
+		}
+		#gouxuan{
+			height: 30px;
+			width: 60px;
+			float: left;
+			padding-top: 8px;
+			padding-left: 10px;
+		}
+		#gouxuan1{
+			height: 30px;
+			width: 60px;
+			float: left;
+			padding-top: 8px;
+			padding-left: 10px;
+		}
+		#shuliangtongji{
+			margin-top: 50px;
+		}
+		#shuliangtongji button,input,span{
+			float: left;
+		}
+
+
+
+		#line9{
+			
+			line-height: 28px;
+			font-size: 14px;
+			color: gray;
+		}
+		#line9 span{
+			float: left;
+			width: 130px;
+		}
+		.headbot{
+			font-size: 18px;
+			color: black;
+		}
+		#line11{
+			color: gray;
+			font-size: 14px;
+			/*margin-top: 150px;*/
+		}
+		#line11 li{
+			margin-top: 50px;
+			float: left;
+			list-style-type: none;
+			margin-right:10px; 
+		}
+		#line12{
+		}
+		#line12 img{
+			float: left;       
+		}
+
+
+		#img2{
+			/*float: left;
+			margin-left: 408px;
+			margin-top: -412px;
+*/
+			position:absolute;
+			top:312px;
+			left: 808px;
+			display:block;
+			width:408px;
+			height:408px;
+			z-index: 99999;
+			overflow:hidden;
+		}
+		/*#img2{position:absolute;right:0;top:0;display:none; width:400px;height:400px;overflow:hidden;}*/
+		/*#Bimg{position:absolute;left:0;top:0;}*/
+		#slider{
+			width:150px;
+			height:150px;
+			position:absolute;
+			left:0;
+			top:0;
+			background:#CCC;
+			opacity:0.4;
+			cursor: move;
+			display:none;
+			filter:alpha(opacity=40);
+		}
+		/*#img2{position:absolute;left:408px;top:0;display:none; width:408px;height:408px;overflow:hidden;}*/
+	</style>
+</head>
+<body>
+	<div id="wtop">
+			<div style="background-color: white; width: 1180px;">
+			<p style="margin-right:350px; "></p>
+			<div class="topimg1" style="background-image: url(img/common_min.png);background-position: 0px 172px;"></div>
+			<div class="topimg1" style="background-image: url(img/common_min.png);background-position: 0px 152px;"></div>
+			<div class="topimg1" style="background-image: url(img/common_min.png);background-position: 0px 132px;"></div>
+			<p style="margin-left: 18px;">登录</p>
+			<p style="margin-left: 18px;">注册</p>
+			<div class="topimg1" style="background-image: url(img/common_min.png);background-position: 0px 93px; margin-right: 5px;"></div>
+			<p>消息</p>
+			<div class="topimg1" style="background-image: url(img/dingdan.jpg);margin-right: 5px;background-repeat: no-repeat;"></div>
+			<p style="margin-right: 18px;">我的订单</p>
+			<p style="margin-right: 18px;">我的收藏</p>
+			<p style="margin-right: 18px;">帮钻兑换</p>
+			<img src="img/phone.png" alt="" style="margin-top: 10px;margin-right: 2px;">
+			<p style="margin-right: 15px;">手机版</p>
+			<p style="margin-right: 15px;">帮5淘</p>
+			<p style="margin-right: 15px;">客户服务</p>
+			<img src="img/gouwuche.jpg" style="margin-top:10px;margin-right: 1px;" alt="">
+			<p>购物车</p>
+			<p style="color: rgb(254,110,0);margin-left: 3px;">0</p>	
+			<img src="img/logo_03.jpg" alt="">
+			<input type="text" value="输入商品或网址关键字，直通全网！">
+			<p style="height: 45px;
+			width: 80px; background-color: rgb(254,110,0);line-height: 45px;text-align: center;margin-top: 20px;border-radius: 5px;color: black;">搜全网</p>
+			<div class="topline2" style="margin-left: 70px;">
+				<div style="background-image: url(img/common_min.png);background-position: 0px 110px;height: 18px;width: 18px;margin: 0 auto;"></div>
+				<p style="margin-top: 5px;">400-085-0505</p>
+			</div>
+			<div class="topline2">
+				<div style="background-image: url(img/common_min.png);background-position: 0px 92px;height: 18px;width: 18px;margin: 0 auto;"></div>
+				<p style="margin-top: 5px;">mc@b5m.com</p>
+			</div>
+			<div style="margin-bottom: 10px;">
+				<img src="img/dd_03.jpg" alt="" style="margin-top: 30px;">
+				<p style="margin-top: 32px;margin-left: 5px;clear: right;margin-bottom: 50px;">常见问题</p>
+			</div>
+			<li style="margin-left: 270px;">洗发护发</li>
+			<li>|</li>
+			<li>日本纸尿裤</li>
+			<li>|</li>
+			<li>身体乳</li>
+			<li>|</li>
+			<li>内衣文胸</li>
+			<li>|</li>
+			<li>ipone 11</li>
+			<li>|</li>
+			<li>ipad Air Pro</li>
+			<li>|</li>
+			<li>牛仔裤</li>
+			<li>|</li>
+			<li>奶粉</li>
+			<li>|</li>
+			<li>防晒霜</li>
+			<li>|</li>
+			<li style="margin-right: 200px;">伞</li>
+		</div>
+	</div>
+	<div id="temp">
+		<li style="margin-left: 90px;">首页</li>
+		<li>热门品牌</li>
+		<li>美妆个护</li>
+		<li>服饰鞋包</li>
+		<li>母婴生活</li>
+		<li>食品保健</li>
+		<li>韩国直邮</li>
+		<li>跨境购</li>
+		<li style="padding-top: 0px;margin-left: 100px;"><img src="img/ff_03.jpg" alt=""></li>
+	</div>
+		<p style="font-size: 12px;float: left; line-height: 35px;margin-left: 370px;">
+			宠物生活>宠物主粮>猫干粮>Orijen >Orijen渴望六鱼
+		</p>
+		<div id="nextsrceen" style="height: 630px;width: 995px;float: left;margin-left: 370px;background-color: rgb(246,245,244);">
+			<div id="shangpindatu">
+				<!-- <img src="img/pp0.png" alt=""> -->
+    			<div id="img1">
+         			<img src="img/pp0.png" id="tu">
+        			<div id="slider"></div>
+  				</div>
+    			<div id="img2" style="width: 408px;height: 408px;display: none;background-image: url(img/pp3.png);background-position: -60px -50px;">
+        			<!-- <img src="img/pp3.png" alt="" id="Bimg" style="left: -50px;top: -50px;"> -->
+    			</div>
+			</div>
+			<p style="float: left;margin-left: 20px;font-size: 16px;">加拿大原装进口渴望（Orijen）六种鱼猫粮5.4kg 深海鱼无谷猫粮</p>
+			<p style="font-size: 11px;width: 468px;margin-left: 20px;color: gray;margin-top: -5px; float: left;">加拿大原装进口|双标防伪</p>
+			<div style="float: left;margin-top: 25px;margin-left: 30px;">
+				<span style="font-size: 12px;">价格</span>
+				<span style="font-size: 15px;margin-left: 20px;">￥679.00</span>
+				<s style="font-size: 12px;">￥1039.00</s>
+			</div>
+			<img src="img/ss_09.jpg" alt="" style="margin-left: 20px;">
+			<div style="font-size: 12px;margin-top: ">
+				<span style="margin-left: 20px; margin-right: 20px;float: left;">猫粮的净含量</span>
+				<div id="gouxuan" onclick="chose();">1.8</div>
+				<div id="gouxuan1" onclick="chose1();" style="height: 30px;width: 60px;">5.4
+				</div>
+			</div>
+			<div id="shuliangtongji">
+				<span style="line-height: 29px; margin-left: 30px;font-size: 14px;margin-right: 65px;">数量</span>
+				<button id="jian" style="width: 27px;height: 29px;">-</button>
+				<input id="shumu" value="1" style="width: 50px;height: 25px;text-align: center;border: 1px solid gray;">
+				<button id="jia" style="width: 27px;height: 29px;">+</button>
+				<span style="font-size: 14px;line-height: 29px;">&nbsp&nbsp件(库存5663件)</span>
+			</div>
+			<div style="float: left;margin-top: 45px;font-size: 14px;margin-left: -280px;">
+				<span style="margin-right: 60px;">销量</span>
+				<span style="color: red;">42</span>
+				<span>件</span>
+			</div>
+			<div style="float: left;margin-top: 70px;font-size: 14px;margin-left: -200px;">
+				<span>您已选择</span>
+				<span id="rongliang" style="color: red;">1.8kg</span>
+			</div>
+			<span style="height: 40px;width: 150px;text-align: center;border: 1px solid red;color: red;margin-top: 100px;margin-left: 40px;line-height: 40px;border-radius: 10px;margin-left: -250px;">立即购买</span>
+			<span style="height: 40px;width: 150px;text-align: center;border: 1px solid red;color: white;background-color: red; margin-top: 100px;margin-left: 40px;line-height: 40px;border-radius: 10px;margin-left: -50px;" id="jiaru">加入购物车</span>
+			<div style="margin-top: 200px;margin-left: 20px;">
+				<img id="span1" src="img/spanl.jpg" alt="">
+				<img id="span2" src="img/sp0.png" alt="" style="border:1px solid red;">
+				<img id="span3" src="img/sp1.png" alt="" style="margin-right: 225px;">
+				<img id="span4" src="img/spanr.jpg" alt="">
+			</div>
+			<div style="margin-left: 1000px;margin-top: -520px;">
+				<img src="img/ww_07.jpg" alt="">
+			</div>
+		</div>
+
+
+
+
+
+
+<!-- 下部分 -->
+		<div style="margin-left: 370px;">
+			<img src="img/a_07.jpg" alt="">
+		</div>
+		<div id="line8" style="margin-left: 370px;">
+			<img src="img/ll7.png" alt="">
+		</div>
+		<div id="line9" style="margin-left: 530px;margin-top: -170px;">
+			<span style="margin-left: 50px;">
+				<div class="headbot">购物指南</div>
+				<div>如何下单</div>
+				<div>淘淘流程</div>
+				<div>订单查询</div>
+				<div>物流配送</div>
+			</span>
+			<span>
+				<div class="headbot">支付相关</div>
+				<div>支付方式</div>
+				<div>安全设置</div>
+				<div>账户消息</div>
+				<div></div>
+			</span>
+			<span>
+				<div class="headbot">售后服务</div>
+				<div>取消订单</div>
+				<div>申请售后</div>
+				<div>退货流程</div>
+				<div>退款相当</div>
+			</span>
+			<span>
+				<div class="headbot">VIP服务</div>
+				<div>VIP优惠</div>
+				<div>如何成为VIP</div>
+				<div>京东plus</div>
+				<div></div>
+			</span>
+			<span>
+				<div class="headbot">帮韩品</div>
+				<div>韩国正品</div>
+				<div>闪电发货</div>
+				<div>帮韩品售后</div>
+				<div></div>
+			</span>
+			<span>
+				<div class="headbot">更多</div>
+				<div>手机App</div>
+				<div>淘淘App</div>
+				<div>淘淘插件</div>
+				<div>其他</div>
+			</span>
+		</div>
+		<div id="line10">
+			<img src="img/erweima.jpg" alt="" style="float: left;margin-left: 30px;">
+		</div>
+
+		<div id="line11" style="margin-top: 170px;margin-left: 550px;">
+				<li style="margin-left: 80px;">关于帮5买</li>
+				<li>|</li>
+				<li>联系我们</li>
+				<li>|</li>
+				<li>合作商家</li>
+				<li>|</li>
+				<li>友情链接</li>
+				<li>|</li>
+				<li>加入我们</li>
+				<li>|</li>
+				<li>移动应用</li>
+				<li>|</li>
+				<li>热门</li>
+				<li>|</li>
+				<li>广告联盟</li>
+				<li>|</li>
+				<li>使用条款</li>
+		</div>
+		<div style="color: gray;font-size: 14px;margin-left: 700px;margin-top: 270px;line-height: 15px;height: 20px;">
+			Copyright&nbsp@2011-2015B5M.COM.All.rights&nbspreserved.powered&nbspby&nbspB5Msoft&nbspCo.Ltd
+		</div>
+		<div style="color: gray;font-size: 14px;height: 20px;margin-left: 400px;margin-top: 15px; font-size: 11px;">
+			增值电信业务经营许可证：&nbsp沪b2-20130065号|中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034沪卫（中医）网申【2015】10032号接口旱地科技食品流通许可证：
+		</div>
+		<div style="color: gray;font-size: 14px;height: 20px;margin-left: 900px;margin-top: 5px;">
+			SP101151410301755
+		</div>
+		<div id="line12" style="margin-left: 550px;margin-top: 15px;">
+			<img src="img/bo1.gif" alt="">
+			<img src="img/bo2.png" alt="">
+			<img src="img/bo3.gif" alt="">
+			<img src="img/bo4.png" alt="">
+			<img src="img/bo5.png" alt="">
+			<img src="img/bo6.png" alt="">
+			<img src="img/bo7.png" alt="">
+		</div>
+	<!-- <img src="img/rr11_02.jpg" alt=""> -->
+		
+
+
+
+
+	<!-- 加入购物车 -->
+	<div id="jiaru1" style="display: none;">
+		<div style="height: 600px; z-index: 1000;position: fixed;right: 0;left: 0;top: 0;bottom: 0;padding-top: 400px;padding-left: 800px;background-color: rgb(222,220,216); opacity: 0.8;">
+		</div>
+		<div style="border: 3px solid rgb(176,169,211);background-color: white; width: 400px;height: 220px;z-index: 1001;position: fixed;top: 400px;left: 700px;">
+				<p style="margin-top: 0px;cursor: pointer; margin-left: 385px;margin-bottom: 0px;" onclick="jiaruxiaoshi();" id="cl1">X</p>
+				<img src="img/rr11_02.jpg" alt="">
+				<br>
+				<button style="margin-left: 30px;border: 1px solid rgb(255,7,84);width: 150px;height: 40px;background-color: white;border-radius: 5px;" id="cl2" onclick="jiaruxiaoshi();">继续购物</button>
+				<button style="margin-left: 30px;border: 1px solid white;width: 150px;height: 40px;background-color: rgb(255,7,84);border-radius: 5px;" id="cl3" onclick="jiaruxiaoshi();">去购物车结算</button>
+		</div>
+	</div>
+		
+	
+</body>
+<script>
+	var jiaru=document.getElementById("jiaru");
+	var jiaru1=document.getElementById("jiaru1");
+	jiaru.onclick=function(){
+		jiaru1.style.display="block";
+	}
+	function jiaruxiaoshi(){
+		jiaru1.style.display="none";
+	}
+
+
+
+	var gouxuan1=document.getElementById("gouxuan1");
+	var gouxuan=document.getElementById("gouxuan");
+	var rongliang=document.getElementById("rongliang");
+		rongliang.innerHTML="1.8kg";
+		gouxuan.style.border="1px solid red";
+		gouxuan1.style.border="1px solid white";
+		gouxuan.innerHTML="1.8"+"<img src='img/duigou.png' style='position: relative;bottom: -15px;right: -25px;'>";
+		gouxuan1.innerHTML="5.4"
+	function chose(){
+		rongliang.innerHTML="1.8kg";
+		gouxuan.style.border="1px solid red";
+		gouxuan1.style.border="1px solid white";
+		gouxuan.innerHTML="1.8"+"<img src='img/duigou.png' style='position: relative;bottom: -15px;right: -25px;'>";
+		gouxuan1.innerHTML="5.4"
+	}
+	function chose1(){
+		rongliang.innerHTML="5.4kg";
+		gouxuan1.style.border="1px solid red";
+		gouxuan.style.border="1px solid white";
+		gouxuan1.innerHTML="5.4"+"<img src='img/duigou.png' style='position: relative;bottom: -15px;right: -25px;'>";
+		gouxuan.innerHTML="1.8";
+	}
+
+
+
+
+	var jia=document.getElementById("jia");
+	var jian=document.getElementById("jian");
+	var shumu=document.getElementById("shumu");
+	shumu.onchange=function(){
+		if (shumu.value>5) {shumu.value=5;jia.style.cursor="not-allowed";}
+		if (shumu.value<0) {shumu.value=0;jian.style.cursor="not-allowed";}
+		if(shumu.value>0&&shumu.value<5){jia.style.cursor="pointer";jian.style.cursor="pointer";}
+	}
+	jia.onclick=function(){
+		jian.style.color="black";
+		if(shumu.value<4){
+			shumu.value++;
+			jia.style.color="black";
+			jia.style.cursor="pointer";
+		}
+		if(shumu.value==4){
+			shumu.value++;
+			jia.style.cursor="not-allowed";
+		}
+	}
+	jian.onclick=function(){
+		jia.style.color="black";
+		if(shumu.value>1){
+			shumu.value--;
+			jia.style.cursor="pointer";
+		}
+		if(shumu.value==1){
+			shumu.value--;
+			jian.style.cursor="not-allowed";
+		}
+	}
+
+
+
+
+	var shangpindatu=document.getElementById("shangpindatu");
+	var tu=document.getElementById("tu");
+
+
+	var img1 = document.getElementById("img1");
+	var img2 = document.getElementById("img2");
+	var slider = document.getElementById("slider");
+	var Bimg = document.getElementById("Bimg");
+	img1.onmouseover=function(){
+	    slider.style.display='block';
+		img2.style.display='block';
+ 	}
+	img1.onmouseout=function(){
+	    slider.style.display='none';
+		img2.style.display='none';
+ 	}
+  
+    img1.onmousemove=function(ev){
+    	// console.log(document.documentElement.scrollTop);
+		var ev=ev||event;
+		var oL=ev.clientX-shangpindatu.offsetLeft-slider.offsetWidth/2;
+		var oT=ev.clientY-shangpindatu.offsetTop-slider.offsetHeight/2+document.documentElement.scrollTop; 
+		var oMaxw=img1.offsetWidth-slider.offsetWidth;
+		var oMaxh=img1.offsetHeight-slider.offsetHeight;
+		oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+		oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+		// oT+=document.documentElement.scrollTop;
+		slider.style.left = 396+oL+'px';
+		slider.style.top = 310+oT+'px' ;
+		var oBmaxw = img2.offsetWidth - 408; 
+		var oBmaxh = img2.offsetHeight - 408;
+		img2.style.position="absolute";
+		img2.style.left ='808px';
+		img2.style.top ='312px';
+		var x="-"+oL*2+"px";
+		var y="-"+oT*2+"px";
+		img2.style.backgroundPosition=x+" "+y;
+	}
+
+
+
+
+
+
+	var span1=document.getElementById("span1");
+	var span2=document.getElementById("span2");
+	var span3=document.getElementById("span3");
+	var span4=document.getElementById("span4");
+	span1.onclick=function(){
+		if(span2.style.border=="1px solid red"){
+			span3.style.border="1px solid red";
+			span2.style.border="0px solid red";
+			tu.src='img/pp1.png';
+			img2.style.backgroundImage="url(img/pp4.png)";
+		}
+		else{
+			span2.style.border="1px solid red";
+			span3.style.border="0px solid red";
+			// shangpindatu.innerHTML="<img src='img/pp0.png'>"
+			tu.src='img/pp0.png';
+			img2.style.backgroundImage="url(img/pp3.jpeg)";
+		}
+	}
+	span2.onclick=function(){
+		span2.style.border="1px solid red";
+		span3.style.border="0px solid red";
+		tu.src='img/pp0.png';
+		img2.style.backgroundImage="url(img/pp3.png)";
+		// shangpindatu.innerHTML="<img src='img/pp0.png'>"
+	}
+	span3.onclick=function(){
+		span3.style.border="1px solid red";
+		span2.style.border="0px solid red";
+
+		tu.src='img/pp1.png';
+		img2.style.backgroundImage="url(img/pp4.png)";
+		// shangpindatu.innerHTML="<img src='img/pp1.png'>"
+	}
+	span4.onclick=function(){
+		if(span2.style.border=="1px solid red"){
+			span3.style.border="1px solid red";
+			span2.style.border="0px solid red";
+			tu.src='img/pp1.png';
+			img2.style.backgroundImage="url(img/pp4.png)";
+			// shangpindatu.innerHTML="<img src='img/pp1.png'>"
+		}
+		else{
+			span2.style.border="1px solid red";
+			span3.style.border="0px solid red";
+			tu.src='img/pp0.png';
+			img2.style.backgroundImage="url(img/pp3.png)";
+			// shangpindatu.innerHTML="<img src='img/pp0.png'>"
+		}
+	}
+</script>
+</html>
