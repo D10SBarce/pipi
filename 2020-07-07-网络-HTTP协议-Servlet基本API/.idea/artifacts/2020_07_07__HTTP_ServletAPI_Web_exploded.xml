@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="2020-07-07-网络-HTTP协议-Servlet基本API:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/2020_07_07__HTTP_ServletAPI_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="2020-07-07-网络-HTTP协议-Servlet基本API/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="2020-07-07-网络-HTTP协议-Servlet基本API" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql-connector-java-5.1.47" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
